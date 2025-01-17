@@ -15,13 +15,14 @@ def index():
         
         # 발신자
         sender=app.config['MAIL_USERNAME'],
-        
+
         # 수신자
-        recipients=['gsw8433@naver.com']
+        recipients=['your_email_address']
     )
     msg.body = "SMTP MAIL TEST"
     mail.send(msg)
     return "Message sent!"
+
 
 if __name__ == '__main__':
     app.run()
